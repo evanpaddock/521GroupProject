@@ -1,0 +1,61 @@
+﻿@model IEnumerable<IronParadise.Models.UserDetails>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" type="text/css" href="./css/UserDetails.css" />
+<h1>View/Edit Accounts</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<table class="table" id="user-details-table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.User.Id).ToUpper()
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.Email)
+            </th>
+            <th>
+                Role Name
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RoleName)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.User.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.User.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.User.Id">Delete</a>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>

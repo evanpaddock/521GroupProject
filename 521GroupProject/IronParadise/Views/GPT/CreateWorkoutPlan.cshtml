@@ -1,0 +1,47 @@
+﻿@model List<IronParadise.Models.WorkoutPlan>
+
+
+@{
+    ViewData["Title"] = "Workout Plan Results";
+}
+
+<link rel="stylesheet" href="./css/CustomStyles.css" />
+<script src="./js/FitnessInfo.js"></script>
+
+<div class="wrapper">
+
+<h2>@ViewData["Title"]</h2>
+<h3>After viewing your custom plan, you can save it below if you like it!</h3>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        @foreach (var plan in Model)
+        {
+            <tr>
+                <th class="day-name">@plan.DayName</th>
+                <th class="sets-header">Sets</th>
+                <th class="reps-header">Reps</th>
+            </tr>
+
+            @foreach (var exercise in plan.Exercises)
+            {
+                <tr>
+                    <td id="exercise-data">@exercise.Item1</td> <!-- Exercise name -->
+                    <td id="exercise-data">@exercise.Item2</td> <!-- Sets -->
+                    <td id="exercise-data">@exercise.Item3</td> <!-- Reps -->
+                </tr>
+            }
+        }
+    </table>
+
+    <div class="buttons-after-table">
+        <button id="downloadPdfButton" onclick="generatePDF()">Download Workout Plan as PDF</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Index", "GPT")'">Generate New Plan</button>
+    </div>
+}
+else
+{
+    <p>No workout plans available.</p>
+}
+    </div>

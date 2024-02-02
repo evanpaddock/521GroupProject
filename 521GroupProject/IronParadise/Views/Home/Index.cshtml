@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- slider -->
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/slider/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Dumbbells</h5>
+                <p>Great for new lifters to build stabilization muscles!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/slider/img2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Setting New Heights</h5>
+                <p>Don't be afraid to push beyond your limits to pass plateaus!'</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/slider/img3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Consistency</h5>
+                <p>Stay consistent. The results are coming!</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="fas fa-chevron-left" aria-hidden="true" style="color: #59b42d; font-size: 70px;"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="fas fa-chevron-right" aria-hidden="true" style="color: #59b42d; font-size: 70px;"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+</div>
+
+<!-- After Slider Content -->
+<section id="home-features" style="margin-top:20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="margin-bottom: 10px;">
+                <h3 style="color: #59b42d;">Personalized Plans</h3>
+                <p>Get a workout plan tailored specifically to your body type, fitness level, and goals. Our advanced algorithm ensures the best possible guidance for your fitness journey.</p>
+            </div>
+            <div class="col-md-4" style="margin-bottom: 10px;">
+                <h3 style="color: #59b42d;">Expert Guidance</h3>
+                <p>With tips from professional trainers and nutritionists, Iron Paradise helps you make informed decisions about your health and fitness routine.</p>
+            </div>
+            <div class="col-md-4" style="margin-bottom: 10px;">
+                <h3 style="color: #59b42d;">Community Support</h3>
+                <p>Join a vibrant community of fitness enthusiasts. Share your progress, get motivated, and stay inspired throughout your fitness journey with #IronParadiseFitness.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="home-testimonials" style="margin-top:10px;">
+    <div class="container">
+        <h2 style="color: #59b42d;">What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"Iron Paradise has completely transformed the way I approach my workouts. Their personalized plans are a game changer!" - Alex</p>
+        </div>
+        <div class="testimonial">
+            <p>"I’ve never felt more motivated and supported in my fitness journey. The community and resources available are top-notch." - Jordan</p>
+        </div>
+    </div>
+</section>
+
+<section id="home-cta" style="margin-top:10px; padding-bottom: 65px;">
+    <div class="container">
+        <h2 style="color: #59b42d;">Ready to Transform Your Fitness?</h2>
+        <p>Sign up today and start your journey towards a healthier, stronger you.</p>
+    </div>
+</section>

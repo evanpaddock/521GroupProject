@@ -1,0 +1,20 @@
+﻿DECLARE @TableName NVARCHAR(255)
+DECLARE tableCursor CURSOR FOR
+    SELECT TABLE_NAME
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_TYPE = 'BASE TABLE'
+
+OPEN tableCursor
+FETCH NEXT FROM tableCursor INTO @TableName
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    DECLARE @Sql NVARCHAR(MAX)
+    SET @Sql = 'DELETE FROM ' + QUOTENAME(@TableName)
+    EXEC sp_executesql @Sql
+
+    FETCH NEXT FROM tableCursor INTO @TableName
+END
+
+CLOSE tableCursor
+DEALLOCATE tableCursor

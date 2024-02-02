@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GymBase</title>
+		<!--meta-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta name="keywords" content="Gym, Fitness Center" />
+		<meta name="description" content="Gym/Fitness Center Template" />
+		<!--style-->
+		<link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../style/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../style/superfish.css" />
+		<link rel="stylesheet" type="text/css" href="../style/fancybox/jquery.fancybox.css" />
+		<link rel="stylesheet" type="text/css" href="../style/jquery.qtip.css" />
+		<link rel="stylesheet" type="text/css" href="../style/style.css" />
+		<link rel="stylesheet" type="text/css" href="../style/responsive.css" />
+		<!--js-->
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-migrate-1.4.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.ba-bbq.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui-1.12.1.custom.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="../js/jquery.carouFredSel-5.6.1-packed.js"></script>
+		<script type="text/javascript" src="../js/jquery.timeago.js"></script>
+		<script type="text/javascript" src="../js/jquery.hint.js"></script>
+		<script type="text/javascript" src="../js/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.fancybox-1.3.4.pack.js"></script>
+		<script type="text/javascript" src="../js/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+	</head>
+	<body>
+		<div class="header_container">
+			<div class="header clearfix">
+				<div class="header_left">
+					<a href="home.html" title="GYMBASE">
+						<img src="../images/header_logo.png" alt="logo" />
+						<span class="logo_left">GYM</span>
+						<span class="logo_right">BASE</span>
+					</a>
+				</div>
+				<ul class="sf-menu header_right">
+					<li class="selected">
+						<a href="home.html" title="HOME">
+							HOME
+						</a>
+					</li>
+					<li>
+						<a href="blog.html" title="NEWS">
+							NEWS
+						</a>
+						<ul>
+							<li>
+								<a href="blog.html" title="BLOG">
+									BLOG
+								</a>
+							</li>
+							<li>
+								<a href="post.html" title="SINGLE POST">
+									SINGLE POST
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="classes.html" title="CLASSES">
+							CLASSES
+						</a>
+						<ul>
+							<li>
+								<a href="classes.html#gym-fitness" title="GYM FITNESS">
+									GYM FITNESS
+								</a>
+							</li>
+							<li>
+								<a href="classes.html#indoor-cycling" title="INDOOR CYCLING">
+									INDOOR CYCLING
+								</a>
+							</li>
+							<li>
+								<a href="classes.html#yoga-pilates" title="YOGA PILATES">
+									YOGA PILATES
+								</a>
+							</li>
+							<li>
+								<a href="classes.html#cardio-fitness" title="CARDIO FITNESS">
+									CARDIO FITNESS
+								</a>
+							</li>
+							<li>
+								<a href="classes.html#boxing" title="BOXING">
+									BOXING
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="timetable.html" title="TIMETABLE">
+							TIMETABLE
+						</a>
+						<ul>
+							<li>
+								<a href="timetable.html#gym-fitness" title="GYM FITNESS">
+									GYM FITNESS
+								</a>
+							</li>
+							<li>
+								<a href="timetable.html#indoor-cycling" title="INDOOR CYCLING">
+									INDOOR CYCLING
+								</a>
+							</li>
+							<li>
+								<a href="timetable.html#yoga-pilates" title="YOGA PILATES">
+									YOGA PILATES
+								</a>
+							</li>
+							<li>
+								<a href="timetable.html#cardio-fitness" title="CARDIO FITNESS">
+									CARDIO FITNESS
+								</a>
+							</li>
+							<li>
+								<a href="timetable.html#boxing" title="BOXING">
+									BOXING
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="gallery.html" title="GALLERY">
+							GALLERY
+						</a>
+						<ul style="margin-left: -47px; background-position: 70px 30px;">
+							<li>
+								<a href="gallery.html#filter=.gym-fitness" title="GYM FITNESS">
+									GYM FITNESS
+								</a>
+							</li>
+							<li>
+								<a href="gallery.html#filter=.indoor-cycling" title="INDOOR CYCLING">
+									INDOOR CYCLING
+								</a>
+							</li>
+							<li>
+								<a href="gallery.html#filter=.yoga-pilates" title="YOGA PILATES">
+									YOGA PILATES
+								</a>
+							</li>
+							<li>
+								<a href="gallery.html#filter=.cardio-fitness" title="CARDIO FITNESS">
+									CARDIO FITNESS
+								</a>
+							</li>
+							<li>
+								<a href="gallery.html#filter=.boxing" title="BOXING">
+									BOXING
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact.html" title="CONTACT">
+							CONTACT
+						</a>
+					</li>
+				</ul>
+				<div class="mobile_menu">
+					<select>
+						<option value="-">-</option>
+						<option value="home.html" selected="selected">HOME</option>
+						<option value="blog.html">NEWS</option>
+						<option value="blog.html">- BLOG</option>
+						<option value="post.html">- SINGLE POST</option>
+						<option value="classes.html">CLASSES</option>
+						<option value="classes.html#gym-fitness">- GYM FITNESS</option>
+						<option value="classes.html#indoor-cycling">- INDOOR CYCLING</option>
+						<option value="classes.html#yoga-pilates">- YOGA PILATES</option>
+						<option value="classes.html#cardio-fitness">- CARDIO FITNESS</option>
+						<option value="classes.html#boxing">- BOXING</option>
+						<option value="timetable.html">TIMETABLE</option>
+						<option value="timetable.html#gym-fitness">- GYM FITNESS</option>
+						<option value="timetable.html#indoor-cycling">- INDOOR CYCLING</option>
+						<option value="timetable.html#yoga-pilates">- YOGA PILATES</option>
+						<option value="timetable.html#cardio-fitness">- CARDIO FITNESS</option>
+						<option value="timetable.html#boxing">- BOXING</option>
+						<option value="gallery.html">GALLERY</option>
+						<option value="gallery.html#filter=.gym-fitness">- GYM FITNESS</option>
+						<option value="gallery.html#filter=.indoor-cycling">- INDOOR CYCLING</option>
+						<option value="gallery.html#filter=.yoga-pilates">- YOGA PILATES</option>
+						<option value="gallery.html#filter=.cardio-fitness">- CARDIO FITNESS</option>
+						<option value="gallery.html#filter=.boxing">- BOXING</option>
+						<option value="contact.html">CONTACT</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- slider -->
+		<ul class="slider">
+			<li id="slide_1" style="background-image: url('../images/slider/img1.jpg');">
+				&nbsp;
+			</li>
+			<li id="slide_2" style="background-image: url('../images/slider/img2.jpg');">
+				&nbsp;
+			</li>
+			<li id="slide_3" style="background-image: url('../images/slider/img3.jpg');">
+				&nbsp;
+			</li>
+		</ul>
+		<div class="page relative">
+			<div class="top_hint">
+				Give us a call: +123 356 123 124
+			</div>
+			<!-- slider content -->
+			<div class="slider_content_box clearfix">
+				<div id="slide_1_content" class="slider_content" style="display: block;">
+					<h1 class="title">
+						INDOOR CYCLING
+					</h1><br />
+					<h3 class="subtitle">
+						strength, stamina, power
+					</h3>
+				</div>
+				<div id="slide_2_content" class="slider_content">
+					<h1 class="title">
+						GYM FITNESS
+					</h1><br />
+					<h3 class="subtitle">
+						strength, speed, stamina
+					</h3>
+				</div>
+				<div id="slide_3_content" class="slider_content">
+					<h1 class="title">
+						CARDIO FITNESS
+					</h1><br />
+					<h3 class="subtitle">
+						cardiovascular fitness
+					</h3>
+				</div>
+				<div class="slider_navigation controls">
+					<a class="more" href="classes.html#indoor-cycling" id="slide_1_url" style="display: block;">&nbsp;</a>
+					<a class="more" href="classes.html#gym-fitness" id="slide_2_url">&nbsp;</a>
+					<a class="more" href="classes.html#cardio-fitness" id="slide_3_url">&nbsp;</a>
+					<a id="prev" class="prev" href="#">&nbsp;</a>
+					<a id="next" class="next" href="#">&nbsp;</a>
+				</div>
+			</div>
+			<!-- home box -->
+			<ul class="home_box_container clearfix">
+				<li class="home_box white">
+					<div class="clearfix">
+						<div class="header_left">
+							<h2>What's Next</h2>
+							<h3>upcoming classes</h3>
+						</div>
+						<div class="header_right">
+							<a href="#" id="upcoming_class_prev" class="icon_small_arrow left_black"></a>
+							<a href="#" id="upcoming_class_next" class="icon_small_arrow right_black"></a>
+						</div>
+					</div>
+					<div class="upcoming_classes_wrapper">
+						<ul class="items_list upcoming_classes clearfix">
+							<li>
+								<a href="classes.html#boxing" title="Boxing">
+									Boxing
+								</a>
+								<div class="value">
+									11.30 - 12.30
+								</div>
+							</li>
+							<li>
+								<a href="classes.html#cardio-fitness" title="Cardio Fitness">
+									Cardio Fitness
+								</a>
+								<div class="value">
+									14.00 - 15.00
+								</div>
+							</li>
+							<li>
+								<a href="classes.html#yoga-pilates" title="Yoga Pilates">
+									Yoga Pilates
+								</a>
+								<div class="value">
+									17.30 - 20.30
+								</div>
+							</li>
+							<li>
+								<a href="classes.html#indoor-cycling" title="Indoor Cycling">
+									Indoor Cycling
+								</a>
+								<div class="value">
+									21.00 - 22.00
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="home_box light_green">
+					<h2>
+						<a href="#" title="Membership Cards">
+							Membership Cards
+						</a>
+					</h2>
+					<h3>25% discount for all members</h3>
+					<div class="news clearfix">
+						<span class="banner_icon note"></span>
+						<div class="text">
+							Discount on services and treatments at the GymBase for all membership cards holders.
+						</div>
+						<a class="more black icon_small_arrow margin_right_white" href="#" title="More">More</a>
+					</div>
+				</li>
+				<li class="home_box green">
+					<h2>
+						<a href="#" title="Personal Training">
+							Personal Training
+						</a>
+					</h2>
+					<h3>sign up today</h3>
+					<div class="news clearfix">
+						<span class="banner_icon calendar"></span>
+						<div class="text">
+							Lorem ipsum dolor sit amet velum, consectetur adipiscing volutpat rutrum sollicitudin.
+						</div>
+						<a class="more black icon_small_arrow margin_right_white" href="#" title="More">More</a>
+					</div>
+				</li>
+			</ul>
+			<div class="page_layout clearfix">
+				<div class="page_left">
+					<h3 class="box_header">
+						Latest News
+					</h3>
+					<ul class="blog clearfix">
+						<li class="post">
+							<div class="comment_box">
+								<div class="first_row">
+									29<span class="second_row">MAR</span>
+								</div>
+								<a class="comments_number" href="post.html#comments_list" title="2 comments">
+									2 comments
+								</a>
+							</div>
+							<div class="post_content">
+								<a class="post_image" href="post.html" title="Lorem ipsum dolor sit amat velum">
+									<img src="../images/samples/blog_img3.jpg" alt="" />
+								</a>
+								<h2>
+									<a href="post.html" title="Lorem ipsum dolor sit amat velum">
+										Lorem ipsum dolor sit amat velum
+									</a>
+								</h2>
+								<div class="text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. 
+									Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. 
+									Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									Mauris sit amet neque nec nunc gravida.
+								</div>
+								<div class="post_footer">
+									<ul class="categories">
+										<li class="posted_by">Posted by <a class="author" href="#" title="GymBase">GymBase</a></li>
+										<li>
+											<a href="#" title="Cardio fitness">
+												Cardio fitness
+											</a>
+										</li>
+										<li>
+											<a href="#" title="Gym fitness">
+												Gym fitness
+											</a>
+										</li>
+									</ul>
+									<a class="more icon_small_arrow margin_right_white" href="post.html" title="More">More</a>
+								</div>
+							</div>
+						</li>
+						<li class="post">
+							<div class="comment_box">
+								<div class="first_row">
+									04<span class="second_row">FEB</span>
+								</div>
+								<a class="comments_number" href="post.html#comments_list" title="0 comments">
+									0 comments
+								</a>
+							</div>
+							<div class="post_content">
+								<h2>
+									<a href="post.html" title="Lorem ipsum dolor sit amat velum">
+										Lorem ipsum dolor sit amat velum
+									</a>
+								</h2>
+								<div class="text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. 
+									Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mollis tellus neque vitae elit. 
+									Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									Mauris sit amet neque nec nunc gravida.
+								</div>
+								<div class="post_footer">
+									<ul class="categories">
+										<li class="posted_by">Posted by <a class="author" href="#" title="GymBase">GymBase</a></li>
+										<li>
+											<a href="#" title="News">
+												News
+											</a>
+										</li>
+										<li>
+											<a href="#" title="Boxing">
+												Boxing
+											</a>
+										</li>
+										<li>
+											<a href="#" title="Sauna">
+												Sauna
+											</a>
+										</li>
+									</ul>
+									<a class="more icon_small_arrow margin_right_white" href="post.html" title="More">More</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="show_all">
+						<a class="more icon_small_arrow margin_right_white" href="blog.html" title="Show all">
+							Show all
+						</a>
+					</div>
+				</div>
+				<div class="page_right">
+					<h3 class="box_header">
+						Training Classes
+					</h3>
+					<div class="sidebar_box first">
+						<ul class="training_classes">
+							<li>
+								<div id="accordion-gym-fitness">
+									<h3>Gym Fitness</h3>
+									<h5>strength, speed, stamina</h5>
+								</div>
+								<div class="clearfix">
+									<div class="item_content clearfix">
+										<a class="thumb_image" href="#" title="Gym Fitness">
+											<img src="../images/samples/classes_thumb1.jpg" alt="" />
+										</a>
+										<div class="text">
+											Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida.
+										</div>
+									</div>
+									<div class="item_footer clearfix">
+										<a class="more icon_small_arrow margin_right_white" href="classes.html#gym-fitness" title="Details">Details</a>
+										<a class="more icon_small_arrow margin_right_white" href="timetable.html#gym-fitness" title="Timetable">Timetable</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div id="accordion-indoor_cycling">
+									<h3>Indoor Cycling</h3>
+									<h5>strength, stamina, power</h5>
+								</div>
+								<div class="clearfix">
+									<div class="item_content clearfix">
+										<a class="thumb_image" href="#" title="Indoor Cycling">
+											<img src="../images/samples/classes_thumb2.jpg" alt="" />
+										</a>
+										<div class="text">
+											Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida.
+										</div>
+									</div>
+									<div class="item_footer clearfix">
+										<a class="more icon_small_arrow margin_right_white" href="classes.html#indoor-cycling" title="Details">Details</a>
+										<a class="more icon_small_arrow margin_right_white" href="timetable.html#indoor-cycling" title="Timetable">Timetable</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div id="accordion-yoga_pilates">
+									<h3>Yoga Pilates</h3>
+									<h5>relax, detoxification</h5>
+								</div>
+								<div class="clearfix">
+									<div class="item_content clearfix">
+										<a class="thumb_image" href="#" title="Yoga Pilates">
+											<img src="../images/samples/classes_thumb3.jpg" alt="" />
+										</a>
+										<div class="text">
+											Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida.
+										</div>
+									</div>
+									<div class="item_footer clearfix">
+										<a class="more icon_small_arrow margin_right_white" href="classes.html#yoga-pilates" title="Details">Details</a>
+										<a class="more icon_small_arrow margin_right_white" href="timetable.html#yoga-pilates" title="Timetable">Timetable</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div id="accordion-cardio_fitness">
+									<h3>Cardio Fitness</h3>
+									<h5>cardiovascular fitness</h5>
+								</div>
+								<div class="clearfix">
+									<div class="item_content clearfix">
+										<a class="thumb_image" href="#" title="Cardio Fitness">
+											<img src="../images/samples/classes_thumb4.jpg" alt="" />
+										</a>
+										<div class="text">
+											Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida.
+										</div>
+									</div>
+									<div class="item_footer clearfix">
+										<a class="more icon_small_arrow margin_right_white" href="classes.html#cardio-fitness" title="Details">Details</a>
+										<a class="more icon_small_arrow margin_right_white" href="timetable.html#cardio-fitness" title="Timetable">Timetable</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div id="accordion-boxing">
+									<h3>Boxing</h3>
+									<h5>personality shaping</h5>
+								</div>
+								<div class="clearfix">
+									<div class="item_content clearfix">
+										<a class="thumb_image" href="#" title="Boxing">
+											<img src="../images/samples/classes_thumb5.jpg" alt="" />
+										</a>
+										<div class="text">
+											Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida.
+										</div>
+									</div>
+									<div class="item_footer clearfix">
+										<a class="more icon_small_arrow margin_right_white" href="classes.html#boxing" title="Details">Details</a>
+										<a class="more icon_small_arrow margin_right_white" href="timetable.html#boxing" title="Timetable">Timetable</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="sidebar_box">
+						<div class="clearfix">
+							<div class="header_left">
+								<h3 class="box_header">
+									Latest Tweets
+								</h3>
+							</div>
+							<div class="header_right">
+								<a href="#" id="latest_tweets_prev" class="scrolling_list_control_left icon_small_arrow left_white"></a>
+								<a href="#" id="latest_tweets_next" class="scrolling_list_control_right icon_small_arrow right_white"></a>
+							</div>
+						</div>
+						<div class="scrolling_list_wrapper">
+							<ul class="scrolling_list latest_tweets">
+								<li class="icon_small_arrow right_white">Available only in php version (php files are in 'page' directory)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_container">
+			<div class="footer">
+				<ul class="footer_banner_box_container clearfix">
+					<li class="footer_banner_box super_light_green">
+						<span class="banner_icon hand"></span>
+						<div class="content">
+							<h2>
+								<a href="#" title="Senior Cards">
+									Senior Cards
+								</a>
+							</h2>
+							<h3>20% off the price</h3>
+						</div>
+					</li>
+					<li class="footer_banner_box light_green">
+						<span class="banner_icon calendar"></span>
+						<div class="content">
+							<h2>
+								<a href="#" title="26-28 May">
+									26-28 May
+								</a>
+							</h2>
+							<h3>workout for free!</h3>
+						</div>
+					</li>
+					<li class="footer_banner_box green">
+						<span class="banner_icon phone"></span>
+						<div class="content">
+							<h2>
+								<a href="#" title="Rooms For Rent">
+									Rooms For Rent
+								</a>
+							</h2>
+							<h3>call +123 655 655</h3>
+						</div>
+					</li>
+				</ul>
+				<div class="footer_box_container clearfix">
+					<div class="footer_box">
+						<h3 class="box_header">
+							Contact Info
+						</h3>
+						<ul class="footer_contact_info_container clearfix">
+							<li class="footer_contact_info_row">
+								<div class="footer_contact_info_left">
+									33 Farlane Street
+								</div>
+								<div class="footer_contact_info_right">
+									+123 655 655
+								</div>
+							</li>
+							<li class="footer_contact_info_row">
+								<div class="footer_contact_info_left">
+									Keilor East VIC 3033
+								</div>
+								<div class="footer_contact_info_right">
+									+123 755 755
+								</div>
+							</li>
+							<li class="footer_contact_info_row">
+								<div class="footer_contact_info_left">
+									Australia
+								</div>
+								<div class="footer_contact_info_right">
+									<a href="mailto:gymbase@mail.com" title="Send Email">
+										gymbase@mail.com
+									</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="footer_social_icons clearfix">
+							<li>
+								<a class="social_icon facebook" href="https://www.facebook.com/QuanticaLabs/" title="">
+									&nbsp;
+								</a>
+							</li>
+							<li>
+								<a class="social_icon twitter" href="https://twitter.com/QuanticaLabs" title="">
+									&nbsp;
+								</a>
+							</li>
+							<li>
+								<a class="social_icon google" href="#" title="">
+									&nbsp;
+								</a>
+							</li>
+							<li>
+								<a class="social_icon skype" href="#" title="">
+									&nbsp;
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_box">
+						<h3 class="box_header">
+							Opening Hours
+						</h3>
+						<ul class="items_list gray opening_hours">
+							<li class="icon_clock_green">
+								<span>
+									Monday - Thursday
+								</span>
+								<div class="value">
+									06.00 - 22.00
+								</div>
+							</li>
+							<li class="icon_clock_green">
+								<span>
+									Friday
+								</span>
+								<div class="value">
+									06.00 - 23.00
+								</div>
+							</li>
+							<li class="icon_clock_green">
+								<span>
+									Saturday
+								</span>
+								<div class="value">
+									07.30 - 23.30
+								</div>
+							</li>
+							<li class="icon_clock_green">
+								<span>
+									Sunday
+								</span>
+								<div class="value">
+									07.30 - 21.30
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_box last">
+						<div class="clearfix">
+							<div class="header_left">
+								<h3 class="box_header">
+									Recent Posts
+								</h3>
+							</div>
+							<div class="header_right">
+								<a href="#" id="footer_recent_posts_prev" class="scrolling_list_control_left icon_small_arrow left_white"></a>
+								<a href="#" id="footer_recent_posts_next" class="scrolling_list_control_right icon_small_arrow right_white"></a>
+							</div>
+						</div>
+						<div class="scrolling_list_wrapper">
+							<ul class="scrolling_list footer_recent_posts">
+								<li class="icon_small_arrow right_white">
+									<a href="post.html">
+										Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.
+									</a>
+									<abbr title="29 May 2012" class="timeago">29 May 2012</abbr>
+								</li>
+								<li class="icon_small_arrow right_white">
+									<a href="post.html">
+										Lorem ipsum dolor sit amat velum.
+									</a>
+									<abbr title="04 Apr 2012" class="timeago">04 Apr 2012</abbr>
+								</li>
+								<li class="icon_small_arrow right_white">
+									<a href="post.html">
+										Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.
+									</a>
+									<abbr title="02 Feb 2012" class="timeago">02 Feb 2012</abbr>
+								</li>
+								<li class="icon_small_arrow right_white">
+									<a href="post.html">
+										Lorem ipsum dolor sit amat velum, consectetur adipiscing elit.
+									</a>
+									<abbr title="24 Jan 2011" class="timeago">24 Jan 2011</abbr>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copyright_area">
+					<div class="copyright_left">
+						© Copyright - <a href="https://1.envato.market/gymbase-responsive-gym-fitness-template" target="_blank">GymBase Template</a> by <a href="https://quanticalabs.com" title="QuanticaLabs" target="_blank">QuanticaLabs</a>
+					</div>
+					<div class="copyright_right">
+						<a class="scroll_top icon_small_arrow top_white" href="#top" title="Scroll to top">Top</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

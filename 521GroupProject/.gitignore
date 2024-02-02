@@ -1,0 +1,148 @@
+# Ignore build folders
+bin/
+obj/
+ 
+# Ignore the local user settings file
+*.user
+*.userosscache
+*.suo
+*.userprefs
+ 
+# Ignore Visual Studio cache files
+.vs/
+.vscode/
+ 
+# Ignore build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+ 
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+ 
+# Standard .NET project files
+*.cache
+*.csproj
+*.vbproj
+*.nupkg
+*.snk
+ 
+# Ignore sensitive data and environment files
+appsettings.json
+appsettings.*.json
+appsettings.Development.json
+ 
+# Ignore the build output directory
+/build/
+ 
+# Node.js dependencies
+node_modules/
+ 
+# Rider IDE
+.idea/
+ 
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+ 
+# Mono Auto Generated Files
+mono_crash.*
+ 
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+ 
+# Folder config file
+Desktop.ini
+ 
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+ 
+# MacOS folder attribute file
+.DS_Store
+ 
+# MacOS Icon file
+Icon?
+ 
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+ 
+# NCrunch
+_NCrunch_*
+crunch*.local.xml
+ 
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+ 
+# BizTalk temporary files
+*.pidb
+*.tp
+ 
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+ 
+# JustCode is a .NET coding add-in
+.JustCode
+ 
+# TeamCity is a build add-in
+_TeamCity*
+ 
+# DotCover is a Code Coverage Tool
+*.dotCover
+ 
+# AxoCover
+.axoCover/*
+!.axoCover/settings.json
+ 
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+ 
+# JetBrains Rider
+.idea/
+ 
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+ 
+# Mono Auto Generated Files
+mono_crash.*
+ 
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+ 
+# Folder config file
+Desktop.ini
+ 
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+ 
+# MacOS folder attribute file
+.DS_Store
+ 
+# MacOS Icon file
+Icon?
+ 
+# Custom files
+# Add here any other file types specific to your project that you want to ignore

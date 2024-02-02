@@ -1,0 +1,154 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model IronParadise.Models.WorkoutPlanRequest
+<link rel="stylesheet" href="./css/FitnessInfo.css" />
+<div class="my-content" id="app">
+    <h2 id="welcome-header">Fill out this form with your fitness information to receive a custom workout plan!</h2>
+    <form id="workoutPlanForm" action="/GPT/CreateWorkoutPlan" method="post" class="text-dark mb-5">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br />
+
+        <label for="height">Height (in inches):</label>
+        <input type="range"
+               id="height"
+               name="height"
+               min="48"
+               max="96"
+               required />
+        <span id="heightValue">72</span> inches<br />
+
+        <label for="weight">Weight (in pounds):</label>
+        <input type="range"
+               id="weight"
+               name="weight"
+               min="50"
+               max="500"
+               required />
+        <span id="weightValue">275</span> lbs<br />
+
+        <label for="age">Age:</label>
+        <select id="age" name="age" required>
+            <option value="">Select Age Range</option>
+            <option value="15-20">15-20</option>
+            <option value="21-25">21-25</option>
+            <option value="26-30">26-30</option>
+            <option value="31-35">31-35</option>
+            <option value="36-40">36-40</option>
+            <option value="41-45">41-45</option>
+            <option value="46-50">46-50</option>
+            <option value="51-55">51-55</option>
+            <option value="56-60">56-60</option>
+            <option value="61-65">61-65</option>
+            <option value="66-70">66-70</option>
+            <option value="71-75">71-75</option>
+            <option value="76-80">76-80</option>
+        </select><br />
+
+        <label for="fitnessLevel">Fitness Level:</label>
+        <select id="fitnessLevel" name="fitnessLevel" required>
+            <option value="">Select Fitness Level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Pro">Pro</option>
+        </select><br />
+
+        <fieldset>
+            <legend>Days of the Week:</legend>
+            <div class="day-checkbox">
+                <input type="checkbox"
+                       id="monday"
+                       name="days"
+                       value="Monday" />
+                <label for="monday">Monday</label>
+            </div>
+            <div class="day-checkbox">
+                <input type="checkbox"
+                       id="tuesday"
+                       name="days"
+                       value="Tuesday" />
+                <label for="tuesday">Tuesday</label>
+            </div>
+            <div class="day-checkbox">
+                <input type="checkbox"
+                       id="wednesday"
+                       name="days"
+                       value="Wednesday" />
+                <label for="wednesday">Wednesday</label>
+            </div>
+            <div class="day-checkbox">
+                <input type="checkbox"
+                       id="thursday"
+                       name="days"
+                       value="Thursday" />
+                <label for="thursday">Thursday</label>
+            </div>
+            <div class="day-checkbox">
+                <input type="checkbox"
+                       id="friday"
+                       name="days"
+                       value="Friday" />
+                <label for="friday">Friday</label>
+            </div>
+            <div class="day-checkbox">
+                <input type="checkbox"
+                       id="saturday"
+                       name="days"
+                       value="Saturday" />
+                <label for="saturday">Saturday</label>
+            </div>
+            <div class="day-checkbox">
+                <input type="checkbox"
+                       id="sunday"
+                       name="days"
+                       value="Sunday" />
+                <label for="sunday">Sunday</label>
+            </div>
+        </fieldset>
+
+        <label for="timePerSession">Time per Session:</label>
+        <select id="timePerSession" name="timePerSession" required>
+            <option value="">Select Duration</option>
+            <option value="15">15 minutes</option>
+            <option value="30">30 minutes</option>
+            <option value="45">45 minutes</option>
+            <option value="60">1 hour</option>
+            <option value="75">1 hour 15 minutes</option>
+            <option value="90">1 hour 30 minutes</option>
+            <option value="105">1 hour 45 minutes</option>
+            <option value="120">2 hours</option>
+        </select><br />
+
+        <label for="goal">Goal:</label>
+        <select id="goal" name="goal" required>
+            <option value="">Select Your Goal</option>
+            <option value="Build Muscle">Build Muscle</option>
+            <option value="Lose Fat">Lose Fat</option>
+            <option value="Overall Health">Overall Health</option>
+            <option value="Improve Flexibility">Improve Flexibility</option>
+        </select>
+        <br />
+
+        <button id="submitBtn" type="submit">Submit</button>
+    </form>
+    <br />
+
+    <!-- <div id="workoutPlanResult"></div> -->
+
+    <script src="./js/FitnessInfo.js"></script>
+    <script>
+        // Update displayed value for height and weight sliders
+        document.getElementById('height').oninput = function () {
+            document.getElementById('heightValue').textContent = this.value
+        }
+        document.getElementById('weight').oninput = function () {
+            document.getElementById('weightValue').textContent = this.value
+        }
+    </script>
+</div>

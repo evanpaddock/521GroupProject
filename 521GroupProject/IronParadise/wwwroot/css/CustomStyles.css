@@ -1,0 +1,65 @@
+﻿.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none !important; /* Ensure overriding default image */
+}
+
+    .carousel-control-prev-icon:after,
+    .carousel-control-next-icon:after {
+        content: '\f053' !important; /* FontAwesome arrow left */
+        font-family: 'FontAwesome' !important;
+        color: #59b42d !important; /* Your desired color */
+        font-size: 70px !important;
+        display: inline-block !important; /* Ensure it's displayed */
+        line-height: 1 !important;
+    }
+
+    .carousel-control-next-icon:after {
+        content: '\f054' !important; /* FontAwesome arrow right */
+    }
+
+/* CustomStyles.css */
+
+/* Change button color */
+.manage-account-btn {
+    background-color: #59b42d; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Optional: remove border if present */
+}
+
+/* Change text color */
+.manage-account-text {
+    color: #59b42d; /* New text color */
+}
+
+#reports-header {
+    margin-bottom: 20px;
+}
+
+#wrap-reports-index ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox to align children */
+    flex-wrap: wrap; /* Allow the list to wrap if it doesn't fit in a single line */
+    gap: 10px; /* Add some space between the buttons */
+    justify-content: start; /* Align items to the start of the container */
+}
+
+    #wrap-reports-index ul li {
+        /* No need for bottom margin for horizontal layout */
+    }
+
+        #wrap-reports-index ul li a {
+            display: block; /* Fill the entire list item area */
+            background-color: #59b42d; /* New darker green color for button background */
+            color: white; /* White text color */
+            padding: 10px 15px; /* Padding inside the buttons */
+            border-radius: 5px; /* Rounded corners for buttons */
+            text-decoration: none; /* Remove underline from links */
+            transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+        }
+
+            #wrap-reports-index ul li a:hover, #wrap-reports-index ul li a:focus {
+                background-color: #4a9b25; /* Even darker shade for hover/focus, adjust as needed */
+                color: #fff; /* Keep text color white */
+                text-decoration: none; /* Ensure underline doesn't reappear on hover/focus */
+            }

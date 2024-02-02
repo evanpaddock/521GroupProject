@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/IronParadiseLogo.png" alt="Logo" width="350" height="350" style="border-radius: 200px;">
+            </div>
+            <div class="col-md-6" style="padding: 3px;">
+                <h2 style="margin: 2px;">About Iron Paradise</h2>
+                <p style="margin: 2px; margin-bottom: 4px;">Welcome to Iron Paradise, a unique platform dedicated to helping you achieve your fitness goals. Our mission is to provide personalized workout plans tailored to your specific fitness needs.</p>
+
+                <h3 style="margin: 2px;">Personalized Workout Plans</h3>
+                <p style="margin: 2px; margin-bottom: 4px;">At Iron Paradise, we understand that every individual's fitness journey is unique. That's why our system allows you to input your fitness information, such as height, weight, age, fitness level, and goals. Based on this data, we generate a custom workout plan that suits your requirements, helping you to workout efficiently and effectively.</p>
+
+                <h3 style="margin: 2px;">Easy Access and Download</h3>
+                <p style="margin: 2px; margin-bottom: 4px;">Once your custom plan is ready, you can easily access it through your user account. What's more, you can download the plan so that you can refer to it anytime and anywhere, ensuring that you stay on track with your fitness journey even when offline.</p>
+
+                <h3 style="margin: 2px;">Join Our Community</h3>
+                <p style="margin: 2px; margin-bottom: 4px;">Become a part of our growing fitness community. Iron Paradise is more than just a workout planner; it's a platform where fitness enthusiasts come together to share their experiences, challenges, and successes. Join us and take the first step towards a healthier, stronger you!</p>
+                <br />
+                <br />
+                <a href="@Url.Action("Index", "GPT")" style="background-color: #59b42d; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; margin-top: 25px;">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>

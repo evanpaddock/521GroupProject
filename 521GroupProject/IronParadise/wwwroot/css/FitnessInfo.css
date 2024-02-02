@@ -1,0 +1,155 @@
+﻿.content-area body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#welcome-header {
+    text-align: center;
+    /*margin: auto;*/
+    margin-top: 40px; /* Adjust the value as needed */
+    margin-bottom: 60px;
+}
+
+.my-content form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.my-content input[type='text'],
+.my-content input[type='range'],
+.my-content select,
+.my-content button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.my-content input[type='checkbox'] {
+    margin-right: 5px;
+}
+
+.my-content label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.my-content .day-checkbox {
+    display: inline-block;
+    margin-right: 20px; /* Adjust space between each day */
+}
+
+    .my-content .day-checkbox label {
+        margin-left: 5px;
+        display: inline; /* Align label next to checkbox */
+    }
+
+.my-content button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    .my-content button:hover {
+        background-color: #4cae4c;
+    }
+
+.my-content .loader {
+    border: 5px solid #f3f3f3; /* Light grey border */
+    border-top: 5px solid #3498db; /* Blue border */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.my-content #loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.my-content #workoutPlanResult {
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.my-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.my-content table,
+.my-content th,
+.my-content td {
+    border: 1px solid #ddd;
+}
+
+.my-content th,
+.my-content td {
+    text-align: left;
+    padding: 8px;
+}
+
+.my-content th {
+    background-color: #f2f2f2;
+}
+
+table td {
+    color: #59b42d;
+}
+
+table th {
+    color: black;
+}
+
+.my-content fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.my-content legend {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
+.wrapper {
+    margin-bottom: 20px;
+    padding-bottom: 80px
+}
+

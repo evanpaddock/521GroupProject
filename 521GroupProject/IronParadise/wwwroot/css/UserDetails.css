@@ -1,0 +1,19 @@
+﻿/*#user-details-table {
+    color: #59b42d;
+}*/
+
+table td {
+    color: #59b42d;
+}
+
+table th {
+    color: white;
+}
+
+.green-button {
+    background-color: #59b42d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}

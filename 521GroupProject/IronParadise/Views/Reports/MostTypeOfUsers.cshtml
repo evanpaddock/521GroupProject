@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model IronParadise.Models.MostTypeOfUsersReport
+
+<link rel="stylesheet" href="./css/UserDetails.css" />
+<h2>Most Common Type of Users</h2>
+<p>Fitness Level: @Model.FitnessLevel</p>
+<p>Frequency: @Model.Frequency</p>
+<a href="@Url.Action("Index", "Reports")">
+    <button type="submit" style="background-color: #59b42d; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; margin-top: 5px;">Back to Reports</button>
+</a>
